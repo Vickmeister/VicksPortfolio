@@ -1,21 +1,27 @@
 import React from 'react';
-import { Header } from './components/Header';
-import { AboutMe } from './components/AboutMe';
-import { ContactMe } from './components/ContactMe';
-import { ResumeSkills } from './components/ResumeSkills';
-import { Portfolio } from './components/Portfolio';
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from './components/Navbar';
+import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
+import ResumeSkills from './components/Resume';
+import Portfolio from './components/Portfolio';
 // import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Route path="/" component={AboutMe} exact />;
-      <Route path="/" component={ContactMe} exact />;
-      <Route path="/" component={Portfolio} exact />;
-      <Route path="/" component={ResumeSkills} exact/>;                     
-    </Router>
+
+      <Router>
+      <Switch>
+      <div> 
+      <Navbar />
+      <Route exact path="/AboutMe" component={AboutMe}/>;
+      <Route exact path="/ContactMe" component={ContactMe}/>;
+      <Route exact path="/Portfolio" component={Portfolio}/>;
+      <Route exact path="/ResumeSkills" component={ResumeSkills}/>;
+      </div> 
+      </Switch>
+      </Router>  
+           
   );
 };
 

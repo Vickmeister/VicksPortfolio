@@ -1,35 +1,23 @@
-import React from 'react'
-import { Form.Group, Form } from 'react-bootstrap';
+import React from "react";
+import { Container }from "react-bootstrap";
+// import { Link, Route } from "react-router-dom";
+// import { render } from 'react-dom';
 
-export const ContactMe = () => {
+function ContactMe() {
     return (
-        <Form>;
 
-            <Form.Group controlId="formGroupName">;
-                <Form.Control type="fullname" placeholder="Enter Name" />;
-            </Form.Group>;
+    <Container className="contact-container">
+        <div className="contactpage">
+            <h1>Let's Talk!</h1>
+            <p>Hit the button below to send any questions or comments you may have. I'll reply as soon as I can :)</p>
+        </div>
+        <div className="emailbtn">
+            <a href="mailto:vick.manjarrez@gmail.com" class="btn"><button color="primary" size="xl">
+              Send Email   
+            </button></a>
+        </div>
+    </Container>
+    )
+}
 
-            <Form.Group controlId="formGroupPassword">;
-                <Form.Control type="email" placeholder="Email" />;
-            </Form.Group>
-
-            <Form.Group controlId="formGroupMessage">;
-                <Form.Control type="message" placeholder="Message"
-            </Form.Group>;
-        </Form>	
-
-// 		<div class="control-group">
-// 		<div class="controls">
-// 		<textarea rows="10" cols="100" class="form-control" 
-// 		placeholder="Message" id="message" required
-// 		data-validation-required-message="Please enter your message" minlength="5" 
-// 		data-validation-minlength-message="Min 5 characters" 
-// 		maxlength="999" style="resize:none"></textarea>
-// 		</div>
-// 		</div> 		 
-// 		<div id="success"> </div>
-// 		<button type="submit" class="btn btn-default pull-right">SEND</button><br />
-// 		</form>
-//     )
-// }
-
+export default ContactMe;
