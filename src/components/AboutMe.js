@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../components/Navbar";
 import VickBJJ from "../assets/VickBJJ.jpg"
-import "../style.css"
+// import "../style.css"
 import { Container } from 'react-bootstrap';
 
 function AboutMe() {

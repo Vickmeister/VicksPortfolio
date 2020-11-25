@@ -3,16 +3,36 @@ h1{
   text-align: center;
 }
 
-.banner{
-  background-image: url(./assets/chicagoSkyline.jpg);
-  background-size: cover;
-  text-align: center;
-  font-size: 55px;
-  font-family: 'scada';
-  overflow: hidden;
-  margin: 0;
-}
-
 .nav{
   font-family: 'scada' ;
+}
+
+.title{
+  color: red;
+  margin-left: 5px;
+  margin-top: 260px;
+  line-height: 1.8;
+  z-index: 5;
+  font-family: 'Mukta', sans-serif;
+}
+
+.homeBackground{
+  width: 1000px;
+  height: 100%;
+  z-index: -5;
+  position: fixed;
+  font-family: 'Mukta', sans-serif;
+}
+
+.navhome{
+  padding-right: 10px;
+  color: black;
+  font-size: larger;
+}
+
+.navbar{
+  border-style: solid;
+  color: transparent;
+  font-family: 'Mukta', sans-serif;
+  font-size: x-large;
 }

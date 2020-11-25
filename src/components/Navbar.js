@@ -6,53 +6,34 @@ function Navbar() {
 
     return (
 
-    <head>
-    <Nav className="justify-content-center">
+    <div class="navbar">
 
-        <Nav.Item>
-          <Link to="/AboutMe">Active</Link>
-        </Nav.Item>
+    {/* <Nav className="justify-content-center"> */}
 
-        <Nav.Item>
-          <Link to="/Portfolio">Portfolio</Link>
-        </Nav.Item>
-
-        <Nav.Item>
-          <Link to="/Resume">Resume</Link>
-        </Nav.Item>
-
-        <Nav.Item>
-          <Link to="/ContactMe">Contact</Link>
-        </Nav.Item>
-
-    </Nav>
-    </head>
-
-
-        // <Container>
-
-        // <div class="navbar">
-    	// 		<Link to="/AboutMe"><li>About Me</li></Link>
-    	// 		<Link to="/ResumeSkills"><li>Resume + Skills </li></Link>
-    	// 		<Link to="/Portfolio"><li>Portfolio </li></Link>
-    	// 		<Link to="/ContactMe"><li>Contact Me</li></Link>
-    	// </div>
-
+         <Nav.Item class="navhome">
+           <Link to="/Home">Home</Link>
+         </Nav.Item>
         
-        // <Row>
-        //     <div class="banner-content wow fadeInRight">
-        //         <h2 class="title"> 
-        //                 Welcome To My Portfolio!
-        //     <br/>
-        //                 <span>
-        //             I'm Vick 
-        //     <br/> 
-        //             Thank You For Visiting</span>
-        //         </h2>
+         <Nav.Item>
+           <Link to="/AboutMe">AboutMe</Link>
+         </Nav.Item>
 
-        //     </div>
-        // </Row>
-        // </Container>
+         <Nav.Item>
+           <Link to="/Portfolio">Portfolio</Link>
+         </Nav.Item>
+
+         <Nav.Item>
+           <Link to="/Resume">Resume</Link>
+         </Nav.Item>
+
+         <Nav.Item>
+           <Link to="/ContactMe">Contact</Link>
+         </Nav.Item>
+
+    {/* </Nav> */}
+
+    </div>
+
     );
 };
 

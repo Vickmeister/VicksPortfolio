@@ -13,7 +13,7 @@ function Portfolio() {
             <p>Showcased below are some of the projects that I've worked over the last couple couple of months.</p>
         </Row>
 
-        <div className="project1" class="col-md-4 col-sm-4">
+        <div className="project1" class="col-md-4 col-sm-4">    
         <h3>Project 1</h3>
         {/* <img className="project1pic" src={project1pic} alt="project1"></img> */}
         <p>Description of project here</p>

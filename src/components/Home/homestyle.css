@@ -1,0 +1,14 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-image: url(../../assets/GrandCanyon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Mukta';
+}
+
+img-fluid{
+  max-width: 100%;
+  height: auto;
+}
